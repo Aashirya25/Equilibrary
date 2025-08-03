@@ -9,8 +9,8 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #FCFCFC;
-    color: #221E1B;
+    background: #fff;
+    color: #3D2958;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: #6653AB;
+    background: #3D2958;
     padding: 0.5rem 2rem;
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #B9A9F0;
+    color: #B09CCB;
 }
 
 .nav-icon {
@@ -95,7 +95,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #B9A9F0;
+    background: #B09CCB;
     overflow: hidden;
     text-align: center;
 }
@@ -122,7 +122,7 @@ nav ul li a {
 
 .hero-home h1 {
     font-size: 3.5rem;
-    color: #221E1B;
+    color: #3D2958;
     margin-bottom: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -135,14 +135,14 @@ nav ul li a {
 }
 
 .hero-btn {
-    background: #FBF8E8;
-    color: #221E1B;
+    background: #fff;
+    color: #3D2958;
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     font-size: 1.3rem;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.07);
     transition: background 0.2s, color 0.2s, transform 0.2s;
     border: none;
     outline: none;
@@ -150,8 +150,8 @@ nav ul li a {
 }
 
 .hero-btn:hover {
-    background: #6653AB;
-    color: #FBF8E8;
+    background: #3D2958;
+    color: #fff;
     transform: translateY(-2px) scale(1.04);
 }
 
@@ -161,12 +161,12 @@ nav ul li a {
 }
 
 .our-mission {
-    background: #F8EEBB;
+    background: #F7E88F;
     margin: 2rem auto;
     max-width: 700px;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.07);
 }
 
 .our-mission-container {
@@ -176,9 +176,9 @@ nav ul li a {
     gap: 2.5rem;
     max-width: 900px;
     margin: 3rem auto 0 auto;
-    background: #F8EEBB;
+    background: #F7E88F;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.07);
     padding: 2.5rem 2rem;
 }
 
@@ -187,25 +187,24 @@ nav ul li a {
     height: 180px;
     object-fit: contain;
     border-radius: 12px;
-    background: #B9A9F022;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
+    background: #B09CCB22;
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.08);
 }
 
 .mission-text {
     flex: 1;
-    color: #221E1B;
+    color: #3D2958;
 }
 
 .mission-text h2 {
     margin-top: 0;
     font-size: 2rem;
-    color: #221E1B;
+    color: #3D2958;
 }
 
 .mission-text p {
     font-size: 1.15rem;
     line-height: 1.6;
-    color: #3E3A37;
 }
 
 @media (max-width: 700px) {
@@ -226,10 +225,10 @@ main {
     max-width: 1100px;
     min-height: 500px;
     margin: 2rem auto;
-    background: #FBF8E8;
+    background: #F7E88F;
     padding: 2.5rem 3rem;
     border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.07);
     flex: 1;
 }
 
@@ -239,8 +238,8 @@ main {
 
 .donate-btn {
     display: inline-block;
-    background: #6653AB;
-    color: #FBF8E8;
+    background: #3D2958;
+    color: #fff;
     padding: 0.75rem 2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -250,8 +249,8 @@ main {
 }
 
 .donate-btn:hover {
-    background: #B9A9F0;
-    color: #221E1B;
+    background: #B09CCB;
+    color: #3D2958;
 }
 
 .donate-image {
@@ -260,22 +259,22 @@ main {
     max-width: 320px;
     width: 100%;
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.10);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.10);
     object-fit: cover;
 }
 
 .testimonial-list blockquote {
-    background: #F8EEBB;
-    color: #221E1B;
-    border-left: 5px solid #6653AB;
+    background: #F7E88F;
+    color: #3D2958;
+    border-left: 5px solid #3D2958;
     margin: 1.5rem 0;
     padding: 1rem 1.5rem;
     border-radius: 8px;
 }
 
 .testimonial-list footer {
-    color: #FBF8E8;
-    background: #6653AB;
+    color: #fff;
+    background: #B09CCB;
     display: inline-block;
     padding: 0.3em 1em;
     border-radius: 6px;
@@ -288,7 +287,7 @@ main {
 }
 
 .faq-list h2 {
-    color: #221E1B;
+    color: #3D2958;
     margin-bottom: 0.5rem;
 }
 
@@ -301,14 +300,14 @@ main {
 .volunteer-form input,
 .volunteer-form textarea {
     padding: 0.5rem;
-    border: 1px solid #B9A9F0;
+    border: 1px solid #B09CCB;
     border-radius: 6px;
     font-size: 1rem;
 }
 
 .volunteer-form button {
-    background: #6653AB;
-    color: #FBF8E8;
+    background: #3D2958;
+    color: #F7E88F;
     border: none;
     padding: 0.75rem;
     border-radius: 8px;
@@ -319,20 +318,20 @@ main {
 }
 
 .volunteer-form button:hover {
-    background: #B9A9F0;
-    color: #221E1B;
+    background: #B09CCB;
+    color: #3D2958;
 }
 
 .volunteer-btn {
     display: inline-block;
-    background: #6653AB;
-    color: #FBF8E8;
+    background: #3D2958;
+    color: #fff;
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.07);
     transition: background 0.2s, color 0.2s, transform 0.2s;
     border: none;
     outline: none;
@@ -340,14 +339,14 @@ main {
 }
 
 .volunteer-btn:hover {
-    background: #B9A9F0;
-    color: #221E1B;
+    background: #B09CCB;
+    color: #3D2958;
     transform: translateY(-2px) scale(1.04);
 }
 
 footer {
-    background: #6653AB;
-    color: #FBF8E8;
+    background: #3D2958;
+    color: #fff;
     text-align: center;
     padding: 1.5rem 0 1rem 0;
     margin-top: 3rem;
@@ -358,7 +357,7 @@ footer .social-media {
 }
 
 footer .social-media a {
-    color: #FBF8E8;
+    color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
     font-size: 1.1rem;
@@ -366,7 +365,7 @@ footer .social-media a {
 }
 
 footer .social-media a:hover {
-    color: #B9A9F0;
+    color: #B09CCB;
 }
 
 .team-list {
@@ -378,9 +377,9 @@ footer .social-media a:hover {
 }
 
 .team-card {
-    background: #F8EEBB;
+    background: #F7E88F;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.08);
     padding: 2rem 1.5rem 1.5rem 1.5rem;
     max-width: 220px;
     min-width: 180px;
@@ -392,7 +391,7 @@ footer .social-media a:hover {
 
 .team-card:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 6px 24px rgba(102, 83, 171, 0.13);
+    box-shadow: 0 6px 24px rgba(61, 41, 88, 0.13);
 }
 
 .team-img {
@@ -401,21 +400,21 @@ footer .social-media a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.1rem;
-    border: 4px solid #B9A9F0;
-    background: #FBF8E8;
+    border: 4px solid #B09CCB;
+    background: #fff;
 }
 
 .team-card h2 {
     font-size: 1.25rem;
-    color: #221E1B;
+    color: #3D2958;
     margin: 0.5rem 0 0.2rem 0;
     font-weight: 700;
     text-align: center;
 }
 
 .team-role {
-    color: #FBF8E8;
-    background: #6653AB;
+    color: #fff;
+    background: #B09CCB;
     border-radius: 8px;
     padding: 0.3em 1em;
     font-size: 1.05rem;
@@ -449,9 +448,9 @@ footer .social-media a:hover {
 }
 
 .impact-story {
-    background: #F8EEBB;
+    background: #F7E88F;
     border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.08);
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -466,20 +465,20 @@ footer .social-media a:hover {
     height: 140px;
     border-radius: 16px;
     object-fit: cover;
-    background: #FBF8E8;
-    border: 4px solid #B9A9F0;
-    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.10);
+    background: #fff;
+    border: 4px solid #B09CCB;
+    box-shadow: 0 2px 8px rgba(61, 41, 88, 0.10);
 }
 
 .impact-content h2 {
-    color: #221E1B;
+    color: #3D2958;
     font-size: 1.5rem;
     margin: 0 0 0.5rem 0;
     font-weight: 700;
 }
 
 .impact-content p {
-    color: #3E3A37;
+    color: #3D2958;
     font-size: 1.1rem;
     margin: 0;
 }
