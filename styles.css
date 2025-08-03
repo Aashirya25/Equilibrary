@@ -11,6 +11,12 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #FCFCFC;
     color: #221E1B;
+    overflow-x: hidden;
+    position: relative;
+}
+
+html {
+    height: 100%;
 }
 
 nav {
@@ -108,7 +114,7 @@ nav ul li a {
     height: 100%;
     background:
         linear-gradient(120deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.10) 100%),
-        url('Equilibrary.png') no-repeat center center/cover;
+        url('Equilibrarycopy.png') no-repeat center 35%/cover;
     opacity: 0.22;
     z-index: 1;
     pointer-events: none;
@@ -161,9 +167,9 @@ nav ul li a {
 }
 
 .our-mission {
-    background: #F8EEBB;
+    background: #FFF2AE;
     margin: 2rem auto;
-    max-width: 700px;
+    max-width: 1100px;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
@@ -174,12 +180,15 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: 900px;
-    margin: 3rem auto 0 auto;
-    background: #F8EEBB;
+    max-width: 1100px;
+    margin: 3rem auto 4rem auto;
+    background: #FFF2AE;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
     padding: 2.5rem 2rem;
+    min-height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mission-image {
@@ -194,6 +203,7 @@ nav ul li a {
 .mission-text {
     flex: 1;
     color: #221E1B;
+    word-wrap: break-word;
 }
 
 .mission-text h2 {
@@ -206,6 +216,7 @@ nav ul li a {
     font-size: 1.15rem;
     line-height: 1.6;
     color: #3E3A37;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 700px) {
@@ -220,17 +231,34 @@ nav ul li a {
         height: 120px;
         margin-bottom: 1rem;
     }
+
+    .mission-text {
+        padding: 0 1rem;
+    }
 }
 
 main {
     max-width: 1100px;
-    min-height: 500px;
     margin: 2rem auto;
-    background: #FBF8E8;
+    background: #FFF2AE;
     padding: 2.5rem 3rem;
     border-radius: 18px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.07);
     flex: 1;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+main h1,
+main p,
+main img,
+main a {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 3rem;
 }
 
 .faq-list {
@@ -257,15 +285,18 @@ main {
 .donate-image {
     display: block;
     margin: 0 auto 1.5rem auto;
-    max-width: 320px;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.10);
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 600px;
+    box-sizing: border-box;
 }
 
 .testimonial-list blockquote {
-    background: #F8EEBB;
+    background: #FFF2AE;
     color: #221E1B;
     border-left: 5px solid #6653AB;
     margin: 1.5rem 0;
@@ -350,7 +381,8 @@ footer {
     color: #FBF8E8;
     text-align: center;
     padding: 1.5rem 0 1rem 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    flex-shrink: 0;
 }
 
 footer .social-media {
@@ -375,10 +407,13 @@ footer .social-media a:hover {
     gap: 2rem;
     justify-content: center;
     margin: 2.5rem 0 3rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 .team-card {
-    background: #F8EEBB;
+    background: #FFF2AE;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
     padding: 2rem 1.5rem 1.5rem 1.5rem;
@@ -388,6 +423,8 @@ footer .social-media a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.18s, box-shadow 0.18s;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 .team-card:hover {
@@ -440,16 +477,18 @@ footer .social-media a:hover {
 }
 
 .impact-stories-wide {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2.5rem auto 3rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: fit-content;
+    box-sizing: border-box;
 }
 
 .impact-story {
-    background: #F8EEBB;
+    background: #FFF2AE;
     border-radius: 18px;
     box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
     display: flex;
@@ -458,7 +497,9 @@ footer .social-media a:hover {
     padding: 2rem 2.5rem;
     margin-bottom: 2rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 1100px;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 .impact-image {
@@ -499,6 +540,51 @@ footer .social-media a:hover {
 }
 
 .wide-container {
-    max-width: 950px;
+    max-width: 1100px;
     margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.instagram-contact {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background: #FFF2AE;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.08);
+}
+
+.instagram-contact h2 {
+    color: #221E1B;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: #6653AB;
+    color: #FBF8E8;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(102, 83, 171, 0.15);
+}
+
+.instagram-link:hover {
+    background: #B9A9F0;
+    color: #221E1B;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 83, 171, 0.25);
+}
+
+.instagram-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
 }
